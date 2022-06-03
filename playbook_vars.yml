@@ -1,0 +1,11 @@
+---
+- name: trabalhando variaveis
+  hosts: localhost
+  vars:
+    - programa: sl
+
+  tasks:
+    - name: utilizando variaveis
+      apt:
+        name: "{{ programa }}"
+        state: latest 

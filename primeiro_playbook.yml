@@ -1,0 +1,10 @@
+---
+- name: playbook1
+  hosts: localhost
+
+  tasks:
+    - name: vamos instalar o net-tools
+      apt:
+        name: net-tools       
+        state: latest
+        #      update_cache: yes

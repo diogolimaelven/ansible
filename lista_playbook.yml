@@ -1,0 +1,13 @@
+---
+- name: playbook lista
+  hosts: localhost
+
+  tasks:
+    - name: Remover programas
+      apt:
+        name:
+          - net-tools
+          - htop
+          - sl
+        state: absent
+        # update_cache: yes    
